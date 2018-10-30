@@ -3,6 +3,8 @@ package com.vincentwei;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 /**
  * Created by weihuajiang on 2018/10/29.
@@ -21,9 +23,6 @@ public class MinicodeTest {
         minicode.stageOne();
     }
 
-    @Test
-    public void stageTwo() throws Exception {
-        minicode.stageTwo();
-    }
+
 
 }

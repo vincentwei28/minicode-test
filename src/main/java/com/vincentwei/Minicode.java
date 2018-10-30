@@ -32,23 +32,23 @@ public class Minicode {
     /**
      * 需求2
      */
-    public void stageTwo() {
+    public void stageTwo(int testNum) {
 
         System.out.println("=====stage two start=====");
-        for (int i = 1; i <= 100; i++) {
-            String tempStr = String.valueOf(i);
-            Boolean firstCondition = i % 3 == 0 || tempStr.contains("3");
-            Boolean secondCondition = i % 5 == 0 || tempStr.contains("5");
-            if (firstCondition && secondCondition) {
-                System.out.println(togetherStr);
-            } else if (firstCondition) {
-                System.out.println(threeInsteadStr);
-            } else if (secondCondition) {
-                System.out.println(fiveInsteadStr);
-            } else {
-                System.out.println(i);
-            }
+
+        String tempStr = String.valueOf(testNum);
+        Boolean firstCondition = testNum % 3 == 0 || tempStr.contains("3");
+        Boolean secondCondition = testNum % 5 == 0 || tempStr.contains("5");
+        if (firstCondition && secondCondition) {
+            System.out.println(togetherStr);
+        } else if (firstCondition) {
+            System.out.println(threeInsteadStr);
+        } else if (secondCondition) {
+            System.out.println(fiveInsteadStr);
+        } else {
+            System.out.println(testNum);
         }
+
         System.out.println("=====stage two end=====");
 
     }
